@@ -14,7 +14,7 @@ const Navigation = () => {
     if (prevPath !== path) {
       setisRouting(true);
     }
-  }, [path, prevPath]);
+  }, [path, prevPath, setisRouting, setPrevPath]);
 
   useEffect(() => {
     if (isRouting) {
